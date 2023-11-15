@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-@import url('https://fonts.google.com/specimen/Roboto?preview.text=RapidQuest%20Adventures');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto&display=swap');
+
 :root {
 --primary-color: #1C448E;
     --secondary-color: #F3DFA2;
     --accent1-color: #74A4BC;
     --aceent2-color: #230903;
 
-    --heading-font: 'https://fonts.google.com/specimen/Agbalumo?preview.text=RapidQuest%20Adventures', Agbalumo;
-    --paragraph-font: 'https://fonts.google.com/specimen/Roboto?preview.text=RapidQuest%20Adventures', Roboto;
+    --heading-font: Agbalumo;
+    --paragraph-font: Roboto;
 
     --nav-background-color: #F3DFA2;
     --nav-link-color: #1C448E;
