@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 nav {
@@ -17,27 +23,22 @@ nav a {
 
 h1 {
     color: steelblue;
+    padding: .5rem;
 }
 
 main {
-    max-width: 840px;
+    max-width: 640px;
 }
 
 aside {
     width: 20rem;
+    text-align: center;
+    position: relative;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
-    position: relative;
-}
-
-aside h2 {
-    position: absolute;
-    top: 35px;
-    right: 125px;
 }
 
 aside img {
@@ -45,14 +46,26 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 60px;
+    right: 125px;
+}
+
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px grey;
     float: right;
+    margin: 0 0 1rem 1rem;
     
 }
 
-p { padding: 0;}
+p { 
+    margin: 1rem;
+}
 
 footer {
     margin-top: 15px;
@@ -61,11 +74,14 @@ footer {
 }
 
 /* Class Selectors */
-
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
