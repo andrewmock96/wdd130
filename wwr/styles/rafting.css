@@ -23,14 +23,18 @@
 
 body {
     font-family:  var(--paragraph-font);
-    max-width: 960px;
+    width: 960px;
     padding: 35px;
     }
 
-img {
+header img {
     box-shadow: 0 0 30px grey;
-    opacity: 90%
+    width: 100px;
    
+}
+
+.hero {
+    position: relative;
 }
 
 .hero img {
@@ -51,8 +55,14 @@ section img {
     
 }
 
+h1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
 h1, h2 {
-    position: relative;
     font-family: var(--heading-font);
     color: var(--primary-color);
     display: flex;
@@ -60,19 +70,19 @@ h1, h2 {
 }
 
 article {
-    position: relative;
-    bottom: 350px;
-    right: -20%;
+    position: absolute;
+    top: 125px;
+    right: 50px;
     width: 75%;   
-    opacity: 80%;
     font-family: var(--paragraph-font);
 }
 
-.sociallinks {
-    width: 2%;
+.sociallinks a img{
+    width: 50px;
     display: block;
     height: auto;
-    align-items: row-reverse;
+    box-shadow: none;
+    margin: 1rem;
 }
 
 .p {
@@ -81,8 +91,8 @@ article {
     border: solid steelblue;
     box-shadow: 0 0 30px grey;
     margin: 0 0 1rem 1rem;
-    background-color: #F3DFA2;
-    color: white;
+    background-color: rgba(243,223,162,.7);
+    color: black;
     font-family: var(--paragraph-font);
 }
 
@@ -96,7 +106,6 @@ article {
     position: relative;
     top: 50px;
     right: 25px;
-    opacity: 100%;
 }
 
 header {
@@ -120,16 +129,29 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
     font-family: var(--paragraph-font);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
 }
 
-nav {
+header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     font-family: var(--heading-font);
-    text-decoration: none;
     background-color: var(--secondary-color);
     opacity: 85%;
     box-shadow: 0 0 30px grey;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
 }
