@@ -28,6 +28,7 @@ h1 {
     font-size: 1.5em;
     color: navy;
     text-align: center;
+    font-family: var(--heading-font);
 }
 
 form {
@@ -52,6 +53,7 @@ legend {
     padding: 0.5rem;
     color: navy;
     font-size: 1.3em;
+    font-family: var(--heading-font);
 }
 
 label, input, button, select, textarea {
