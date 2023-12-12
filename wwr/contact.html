@@ -44,9 +44,27 @@
             <p>Email: <a href="mailto:">nwilliams@rqadventures.com</a></p>
             <img src="images\nicole-williams.jpg" alt="Nicole Williams Picture" width="200">
             <h4>Let us know how to help</h4>
-            <div class="form">
-                <iframe src="https://andrewmock96.github.io/wdd130/wwr/contact-form.html" width="900" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <form>
+                <fieldset>
+                    <link rel="stylesheet" href="styles/contact-form.css">
+                    <legend>Questions</legend>
+                    <label for="q1">What is your first and last name?</label>
+                    <input type="text" id="q1" name="q1">
+                    <label for="q1">What is your Email?</label>
+                    <input type="text" id="q1" name="q1">
+                    <label for="q1">What the general inquiry about?</label>
+                    <select id="q3" name="q3">
+                        <option value="answer1">General Inquiry<option>
+                        <option value="answer2">Reservation Question</option>
+                        <option value="answer3">Website Suggestion</option>
+                    </select>
+                    <label for="q2">How can we help you?</label>
+                    <textarea id="q2" name="q2" rows="3" placeholder="Answer here"></textarea>
+                    <label for="q2">Please subsribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="newletter" name="newletter">                  
+                </fieldset>
+                <button type="submit">Submit form</button>
+            </form>
         </main>
         <footer>
             <p>©️2023 | Contact | Andrew Mock | WWD 130</p>
