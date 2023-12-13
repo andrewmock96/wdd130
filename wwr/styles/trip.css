@@ -166,10 +166,6 @@ nav a {
     color: #000;
 }
 
-.map {
-    border: none;
-}
-
 img {
     box-shadow: 0 0 30px grey;
     width: 50%;
@@ -180,27 +176,10 @@ img {
     display: flex;
 }
 
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
   .grid {
     display: grid;
     align-items: center;
 }
-
-/* aside {
-    width: 20rem;
-    text-align: center;
-    position: relative;
-    margin: 1rem;
-    border: 1px solid var(--secondary-color);
-    padding: 1rem;
-    background-color: #eee;
-    grid-column: 1/2;
-    grid-row: 1/2;
-} */
 
 div {
     display: grid;
@@ -211,9 +190,7 @@ div {
     border: 1px solid var(--secondary-color);
     padding: 1rem;
     background-color: #eee;
-    /* grid-column: 1/2;
-    grid-row: 1/2; */
-    justify-content: space-evenly;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 
