@@ -23,7 +23,7 @@
 
 body {
     font-family:  var(--paragraph-font);
-    max-width: 1200px;
+    max-width: 940px;
     padding: 35px;
     }
 
@@ -68,7 +68,7 @@ header {
     background-color: var(--accent1-color);
     border: solid var(--secondary-color);
     box-shadow: 0 0 30px grey;
-    width: 960px;
+    width: 890px;
 }
 
 p {
@@ -91,9 +91,10 @@ header nav {
     background-color: var(--secondary-color);
     opacity: 85%;
     box-shadow: 0 0 30px grey;
+
 }
 
-img {
+.img {
     box-shadow: 0 0 30px grey;
     width: 40%;
     height: auto;
