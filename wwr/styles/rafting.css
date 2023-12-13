@@ -120,7 +120,7 @@ header {
     background-color: var(--accent1-color);
     border: solid var(--secondary-color);
     box-shadow: 0 0 30px grey;
-    width: 960px;
+    width: 890px;
 }
 
 p {

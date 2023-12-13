@@ -33,27 +33,6 @@ header img {
    
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 0 30px grey;
-    border: solid var(--secondary-color);
-}
-
-section img {
-    width: 75%;
-    height: auto;
-    border: solid var(--secondary-color);
-    box-shadow: 0 0 30px grey;
-    margin: 0 0 .5rem .5rem;
-    display: flex;
-    
-}
 
 h1{
     position: absolute;
@@ -82,37 +61,6 @@ article {
     font-family: var(--paragraph-font);
 }
 
-.sociallinks a img{
-    width: 50px;
-    display: block;
-    height: auto;
-    box-shadow: none;
-    margin: 1rem;
-}
-
-.p {
-    padding: 50px;
-    margin: 2rem;
-    border: solid steelblue;
-    box-shadow: 0 0 30px grey;
-    margin: 0 0 1rem 1rem;
-    background-color: rgba(243,223,162,.7);
-    color: black;
-    font-family: var(--paragraph-font);
-}
-
-.article img {
-    display: block;
-    width: 25%;
-    height: auto;
-    float: right;
-    box-shadow: 0 0 30px grey;
-    margin: 0 0 1rem 1rem;
-    position: relative;
-    top: 50px;
-    right: 25px;
-}
-
 header {
     display: grid;
     grid-template-columns: 1fr  3fr;
@@ -124,7 +72,7 @@ header {
 }
 
 p {
-    padding: 0px;
+    padding: 1rem;
     margin: 1rem;
     font-family: var(--paragraph-font)
 }
@@ -132,16 +80,6 @@ p {
 header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    font-family: var(--paragraph-font);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-direction: row;
 }
 
 header nav {
@@ -155,28 +93,15 @@ header nav {
     box-shadow: 0 0 30px grey;
 }
 
-footer nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
-}
-
 img {
     box-shadow: 0 0 30px grey;
     width: 50%;
     height: auto;
-    
-    box-shadow: 0 0 30px grey;
     margin: 0 0 .5rem .5rem;
     display: flex;
 }
 
-  .grid {
+.grid {
     display: grid;
     align-items: center;
 }
@@ -187,13 +112,35 @@ div {
     text-align: center;
     position: relative;
     margin: 1rem;
-    border: 1px solid var(--secondary-color);
     padding: 1rem;
     background-color: #eee;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 
-aside img {
-    border: solid var(--secondary-color);
+footer nav {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+}
+
+.sociallinks a img{
+    width: 50px;
+    display: block;
+    height: auto;
+    box-shadow: none;
+    margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
 }
