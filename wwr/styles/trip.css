@@ -106,8 +106,9 @@ img {
     align-items: center;
 }
 
-div {
+ div {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 20rem;
     text-align: center;
     position: relative;
@@ -115,7 +116,6 @@ div {
     padding: 1rem;
     background-color: #eee;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
 }
 
 footer nav {
