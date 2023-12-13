@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html lang="en-US">
     <head>
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
-        <title>Rafting Site Plan | Andrew Mock</title>
-        <meta name = "description" content = "The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
-        <meta name = "author" content = "Andrew Mock">
-        <link rel = "stylesheet" href = "styles/site-plan-rafting.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact | RapidQuest Adventures</title>
+        <meta name="title" content="About Us">
+        <meta name="author" content="Andrew Mock">
+        <meta name="description" content="A webpage designed for a customer to book an adventure">
+        <link rel="stylesheet" href="styles/trip.css">
     </head>
     <body>
         <header>
             <img src="images/logo.png" alt="RapidQuest Adventures Logo">
             <nav>
-                <a href="site-plan-rafting.html">Home</a>
+                <a href="home.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
                 <a current="current" href="trips.html">Trips</a>
             </nav>
         </header>  
-        <main class="indent">
-            <div>Created by Andrew Mock
-                <h1>RapidQuest Adventures</h1>
-                <h2>Overview</h2>
+        <div class="grid">
+            <main>
+                <h2>Plan your next adventure!</h2>
+                <p>Plan your next adventure by contacting us either by email, phone, or filling out this form below.</p>
+                <p>Phone: (012)-345-6789</p>
+                <p>Email: <a href="mailto:">rapidquestadventures@gmail.com</a></p>
+                <h2>RapidQuest Adventures</h2>
                 <h3>Purpose</h3>
                 <p>At our white water rafting company, we're on a mission to craft experiences that transcend the ordinary and redefine adventure. We believe in the transformative 
                     power of nature's unbridled forces, using rushing rivers as both our canvas and catalyst. Our purpose is to inspire a sense of awe and camaraderie among our 
@@ -45,40 +49,60 @@
                     Join us for an unforgettable adventure on the water, where the thrill of navigating through rapids is matched by the joy of camaraderie and the beauty of 
                     nature's spectacular landscapes.</p>
                 <nav>
-                    <a href="trips.html">Plan your adventure!</a>
+                    <a href="contact.html">Plan your adventure!</a>
                 </nav>
                 <h2>Branding</h2>
                 <h3>Website Logo</h3>
                 <img src = "images/logo.png" alt = "RapidQuest Adventures Logo">
-                
-            </div>
-            <div>
-                <h3>Kid friendly</h3>
-                <article>
-                    <img src = "images/kids1.png" alt = "Kids enjoying rafting">
-                    <img src = "images/kids2.png" alt = "Kids enjoying rafting">
-                    <h3>Thrill Seekers</h3>
-                    <img src = "images/extreme.png" alt = "Seasoned rafters challenge themselves">
-                    <img src = "images/waterfall.png" alt = "Seasoned rafters challenge themselves">
-                </article>
-                <h2>Available Dates</h2>
-                <p>calender of free dates would appear here.</p>
-                <h2>Style Guide</h2>
-                <h3>Color Palette</h3>
-                <p>
-                    primary-color: 1C448E
-                    secondary-color: F3DFA2
-                    accent1-color: 74A4BC
-                    accent2-color: 230903
-                    Palette URL:<a href = "https://coolors.co/230903-74a4bc-1c448e-f3dfa2-efe6dd" target = "_blank">https://coolors.co/230903-74a4bc-1c448e-f3dfa2-efe6dd</a></p>
-                <h3>Typography</h3>
-                <h4>Headings Example font</h4>
-                <h4>Normal Text/Paragraph Example Font</h4>
-                <p>Example Text - Lorem, ipsum.</p>
-                <h4>Colored Callout Example Font</h4>
-                <p>Example Text - Lorem, ipsum.</p>
-            </div>
-    </main>
+                <div>
+                    <form>
+                        <fieldset>
+                            <link rel="stylesheet" href="styles/contact-form.css">
+                            <legend>Book Your Adventure</legend>
+                            <label for="user">What is your first and last name?</label>
+                            <input type="text" id="user" name="q1">
+                            <label for="email">What is your Email?</label>
+                            <input type="text" id="email" name="email">
+                            <label for="date">Which day would you like to book?<i>(look at home page for available booking dates)</i> </label>
+                            <input type="text" id="date" name="date">
+                            <label for="people">How many people are in your party?</label>
+                            <input type="number" id="people" name="people">
+                            <label for="card">What type of card is it?</label>
+                            <select id="card" name="card">
+                                <option value="answer1">Credit Card<option>
+                                <option value="answer2">Debit Card</option>
+                                <option value="answer3">Gift Card</option>
+                            </select>
+                            <label for="service">What is the card service corporation</label>
+                            <select id="service" name="service">
+                                <option value="answer1">Visa<option>
+                                <option value="answer2">Mastercard</option>
+                                <option value="answer3">American Express</option>
+                            </select>
+                            <label for="number">What is your card number?</label>
+                            <input type="text" id="number" name="number">
+                            <label for="exp">What is your card experation date?</label>
+                            <input type="text" id="exp" name="exp">
+                            <label for="ccv">What is your card CCV?</label>
+                            <input type="text" id="ccv" name="ccv">
+                            <label for="address">What is your current home address?</label>
+                            <input type="text" id="address" name="address">
+                            <label for="q2">Please provide a brief explaination of what the trip is about.</label>
+                            <textarea id="q2" name="q2" rows="3" placeholder="Explaination Here"></textarea>
+                            <label for="q2">Please subsribe me to the monthly newsletter</label>
+                            <input type="checkbox" id="newletter" name="newletter">                  
+                        </fieldset>
+                        <button type="submit">Submit Adventure Booking!</button>
+                    </form>
+                </div>
+                    <section>
+                        <!-- spacing -->
+                        <img src="images\family-fun.jpg" alt="family fun" width="200">
+                        <img src="images\fun.jpg" alt="family fun" width="200">
+                        <h2>Hope to see you soon!</h2>
+                    </section>
+            </main>
+    </div>
         <footer>
             <nav class="sociallinks">
                 <p>©️2023 | Site Plan Rafting | Andrew Mock | WDD 130</p>
